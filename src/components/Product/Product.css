@@ -1,0 +1,62 @@
+.product {
+	width: 300px;
+	border: 1px solid rgb(226, 226, 226);
+	border-radius: 10px;
+	position: relative;
+}
+.product:hover{
+	border-color: rgb(199, 199, 199);
+}
+.product img{
+	width: 70%;
+	margin: 30px;
+}
+
+/* *********** */
+.product:hover.product img {
+    animation: Football-rotate infinite 10s linear;
+}
+
+.img-part{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+}
+.info{
+	margin: 0 20px;
+	margin-bottom: 50px;
+}
+
+.cart-btn{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border: none;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	padding: 10px 0;
+	color: white;
+	background-color: rgb(0, 0, 0);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cart-btn:hover{
+	background-color: rgb(44, 44, 44);
+}
+
+.cart-btn-text{
+	margin: 0;
+	padding-right: 10px;
+}
+
+@keyframes Football-rotate {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(-360deg);
+	}
+  }
+  
