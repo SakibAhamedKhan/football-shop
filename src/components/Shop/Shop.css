@@ -12,12 +12,43 @@
 
 .shop-selected{
 	border: 1px solid rgb(219, 219, 219);
+	padding-bottom: 20px;
 	border-radius: 5px;
-	height: 500px;
+	height: fit-content;
 	position: sticky;
 	top: 20px;
+	
 }
 
 .shop-selected-title{
 	text-align: center;
+}
+
+@media screen and (max-width:1300px) {
+	.shop-product{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width:950px) {
+	.shop-product{
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.shop{
+		
+		grid-template-columns: 2fr 2fr;
+	}
+}
+
+@media screen and (max-width:600px) {
+	.shop{
+		grid-template-columns: 1fr;
+		margin: 30px 40px;
+		justify-items: center;	
+	}
+}
+@media screen and (max-width:300px) {
+	.shop{
+		margin: 30px 10px;
+	}
 }

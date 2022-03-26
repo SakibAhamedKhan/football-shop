@@ -35,7 +35,7 @@ const Shop = () => {
 	}
 
 	const randomChoose = (products) => {
-		console.log(products);
+		// console.log(products);
 		const len = products.length;
 		const randomGuess = Math.floor(Math.random() * len);
 
@@ -46,7 +46,7 @@ const Shop = () => {
 	}
 
 	const chooseAgain = () => {
-
+		setCart([]);
 	}
 
 	// console.log(cart);
@@ -66,6 +66,7 @@ const Shop = () => {
 				<Selected 
 				cart={cart}
 				randomChoose={randomChoose}
+				chooseAgain={chooseAgain}
 				></Selected>
 			</div>
 		</div>

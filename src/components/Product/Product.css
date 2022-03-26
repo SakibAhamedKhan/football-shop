@@ -14,7 +14,7 @@
 
 /* *********** */
 .product:hover.product img {
-    animation: Football-rotate infinite 10s linear;
+    animation: Football-rotate infinite 2s linear;
 }
 
 .img-part{
@@ -61,3 +61,9 @@
 	}
   }
   
+
+@media screen and (max-width:600px) {
+	.product {
+		width: fit-content;
+	}
+}
