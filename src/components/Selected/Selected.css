@@ -1,0 +1,34 @@
+.selected{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.selected-item{
+	margin: 0 10px;
+}
+
+.random-choose-btn{
+	margin: 10px 0;
+	padding: 8px 20px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid rgb(194, 193, 193);
+	cursor: pointer;
+}
+
+.random-choose-btn:hover{
+	background-color: rgb(240, 238, 238);
+}
+
+.choose-again-btn{
+	padding: 8px 20px;
+	background-color: white;
+	border-radius: 5px;
+	border: 1px solid rgb(194, 193, 193);
+	cursor: pointer;
+}
+
+.choose-again-btn:hover{
+	background-color: rgb(240, 238, 238);
+}

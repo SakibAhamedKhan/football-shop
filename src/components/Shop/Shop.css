@@ -1,10 +1,23 @@
 .shop{
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 4fr 2fr;
 	margin: 30px 50px;
+	gap: 20px;
 }
 .shop-product{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 20px;
+}
+
+.shop-selected{
+	border: 1px solid rgb(219, 219, 219);
+	border-radius: 5px;
+	height: 500px;
+	position: sticky;
+	top: 20px;
+}
+
+.shop-selected-title{
+	text-align: center;
 }

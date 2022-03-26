@@ -41,9 +41,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	cursor: pointer;
 }
 .cart-btn:hover{
-	background-color: rgb(44, 44, 44);
+	background-color: rgb(114, 107, 107);
 }
 
 .cart-btn-text{
