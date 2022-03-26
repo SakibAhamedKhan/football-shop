@@ -1,4 +1,4 @@
-import { faRemove } from '@fortawesome/free-solid-svg-icons';
+import { faRemove, faTrash } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './Selecteditem.css'
@@ -6,6 +6,7 @@ import './Selecteditem.css'
 const Selecteditem = (props) => {
 	// console.log(props.cart)
 	const {name, image} = props.cart;
+	const {removeSpecificItem} = props;
 	return (
 		<div className='selecteditem'>
 			<div className='selecteditem-img'>
@@ -14,7 +15,9 @@ const Selecteditem = (props) => {
 			<div className='selecteditem-name'>
 				<p>{name}</p>
 			</div>
-			<button className='selected-delete-btn'><FontAwesomeIcon icon={faRemove}></FontAwesomeIcon></button>
+		
+			<FontAwesomeIcon className='selected-delete-btn' onClick={()=>removeSpecificItem(props.cart)} icon={faTrash}></FontAwesomeIcon>
+			
 		</div>
 	);
 };

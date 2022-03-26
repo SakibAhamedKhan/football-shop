@@ -3,7 +3,7 @@ import Selecteditem from '../Selecteditem/Selecteditem';
 import './Selected.css'
 
 const Selected = (props) => {
-	const {cart, randomChoose, chooseAgain} = props;
+	const {cart, randomChoose, chooseAgain, removeSpecificItem} = props;
 	
 	return (
 		<div className='selected'>
@@ -12,6 +12,7 @@ const Selected = (props) => {
 					cart.map(p => <Selecteditem 
 						key={p.id} 
 						cart={p}
+						removeSpecificItem={removeSpecificItem}
 						></Selecteditem>)
 				}
 			</div>

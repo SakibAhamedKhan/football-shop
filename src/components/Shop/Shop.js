@@ -47,6 +47,12 @@ const Shop = () => {
 		setCart([]);
 	}
 
+
+	const removeSpecificItem = (product) => {
+		const newCart = cart.filter(p => p.id!== product.id);
+		setCart(newCart);
+	}
+
 	// console.log(cart);
 	return (
 		<div className='shop'>
@@ -65,6 +71,7 @@ const Shop = () => {
 				cart={cart}
 				randomChoose={randomChoose}
 				chooseAgain={chooseAgain}
+				removeSpecificItem={removeSpecificItem}
 				></Selected>
 			</div>
 		</div>

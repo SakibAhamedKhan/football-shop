@@ -4,7 +4,9 @@ import './Header.css'
 const Header = () => {
 	return (
 		<div className='header'>
-				<h2>Welcome to Football Shop</h2>
+				<div className='header-title'>
+					<h2>Welcome to Football Shop</h2>
+				</div>
 		</div>
 	);
 };
