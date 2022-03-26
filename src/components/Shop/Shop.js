@@ -35,14 +35,12 @@ const Shop = () => {
 	}
 
 	const randomChoose = (products) => {
-		// console.log(products);
-		const len = products.length;
-		const randomGuess = Math.floor(Math.random() * len);
-
-		console.log(cart);
-		const newCart = [products[randomGuess]];
-		console.log(newCart);
-		setCart(newCart);
+		if(products.length){
+			const len = products.length;
+			const randomGuess = Math.floor(Math.random() * len);
+			const newCart = [products[randomGuess]];
+			setCart(newCart);
+		}
 	}
 
 	const chooseAgain = () => {

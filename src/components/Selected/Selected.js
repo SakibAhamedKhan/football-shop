@@ -3,8 +3,8 @@ import Selecteditem from '../Selecteditem/Selecteditem';
 import './Selected.css'
 
 const Selected = (props) => {
-	// console.log(props.cart);
 	const {cart, randomChoose, chooseAgain} = props;
+	
 	return (
 		<div className='selected'>
 			<div className='selected-item'>
