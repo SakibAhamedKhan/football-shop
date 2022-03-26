@@ -30,11 +30,25 @@ const Shop = () => {
 				alert('You can not Selecte more than 4 item!!!');
 				newCart = [...cart];
 			}
-			
 		}
 		setCart(newCart);
-		
 	}
+
+	const randomChoose = (products) => {
+		console.log(products);
+		const len = products.length;
+		const randomGuess = Math.floor(Math.random() * len);
+
+		console.log(cart);
+		const newCart = [products[randomGuess]];
+		console.log(newCart);
+		setCart(newCart);
+	}
+
+	const chooseAgain = () => {
+
+	}
+
 	// console.log(cart);
 	return (
 		<div className='shop'>
@@ -49,7 +63,10 @@ const Shop = () => {
 			</div>
 			<div className='shop-selected'>
 				<h3 className='shop-selected-title'>Selected Product</h3>
-				<Selected cart={cart}></Selected>
+				<Selected 
+				cart={cart}
+				randomChoose={randomChoose}
+				></Selected>
 			</div>
 		</div>
 	);

@@ -4,7 +4,7 @@ import './Selected.css'
 
 const Selected = (props) => {
 	// console.log(props.cart);
-	const {cart} = props;
+	const {cart, randomChoose} = props;
 	return (
 		<div className='selected'>
 			<div className='selected-item'>
@@ -16,7 +16,7 @@ const Selected = (props) => {
 				}
 			</div>
 			
-			<button className='random-choose-btn'>ChOOSE 1 FOR ME</button>
+			<button className='random-choose-btn' onClick={ () => randomChoose(cart)}>ChOOSE 1 FOR ME</button>
 			<button className='choose-again-btn'>CHOOSE AGAIN</button>
 		</div>
 	);
